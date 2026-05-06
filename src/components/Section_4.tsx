@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Section_4() {
   
 
@@ -30,10 +32,12 @@ export default function Section_4() {
                     <p className="font-semibold">Secs</p>
                 </div>
                 </div>
+                <Link to="product">
                 <button className="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-600 cursor-pointer">
                 {" "}
                 View All Products →
                 </button>
+                </Link>
             </div>
             <div className="w-full md:w-1/2 flex md:justify-end items-center">
                 <img

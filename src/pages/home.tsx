@@ -4,8 +4,6 @@ import Section_3 from '../components/Section_3'
 import Section_4 from '../components/Section_4'
 import Section_5 from '../components/Section_5'
 import Section_6 from '../components/Section_6'
-import SectionFooter from '../components/Section-Footer'
-
 export default function HomePage() {
   return (
     <div className="bg-white text-gray-800 px-4">
@@ -18,8 +16,6 @@ export default function HomePage() {
           <Section_5 />
           <Section_6 />
         </main>
-        {/* Footer */}
-        <SectionFooter />
       </div>
   )
 }

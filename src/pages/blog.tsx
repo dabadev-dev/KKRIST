@@ -1,5 +1,3 @@
-import SectionFooter from "../components/Section-Footer";
-import SectionHero from "../components/section-Hero";
 import Section_1 from "../components/section_1";
 import Section_2 from "../components/Section_2";
 import Section_3 from "../components/Section_3";
@@ -10,8 +8,6 @@ import Section_6 from "../components/Section_6";
 export default function BlogPage() {
   return (
     <div className="bg-white text-gray-800 px-4">
-        {/* Header */}
-        <SectionHero />
         {/* Main Content */}
         <main className="space-y-26">
           <Section_1 />
@@ -21,8 +17,6 @@ export default function BlogPage() {
           <Section_5 />
           <Section_6 />
         </main>
-        {/* Footer */}
-        <SectionFooter />
       </div>
   )
 }
