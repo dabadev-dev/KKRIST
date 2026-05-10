@@ -1,6 +1,7 @@
 import { FaPhoneVolume } from "react-icons/fa";
 import { GrLocation } from "react-icons/gr";
 import { MdOutlineMailOutline } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export default function SectionFooter() {
   return (
@@ -9,7 +10,7 @@ export default function SectionFooter() {
             <div className=" md:px-16 py-10">
                 <div className="flex flex-col md:flex-row justify-center items-center text-center md:text-start gap-8">
                     <div className="flex flex-col gap-2 items-center md:items-start">
-                        <img className="w-32 bg-white " src="images/logo.png" alt="Logo" />
+                        <Link to="/home"><img className="w-32 bg-white " src="images/logo.png" alt="Logo" /></Link>
                         <a href="#" className="flex hover:text-gray-400 gap-2"><FaPhoneVolume /> 77 777 77 77</a>
                         <a href="#" className="flex hover:text-gray-400 gap-2"><MdOutlineMailOutline /> contact@krist.com</a>
                         <a href="#" className="flex hover:text-gray-400 gap-2"><GrLocation /> 3891 Ranchivew Dr. Richardson, California 62639</a>

@@ -11,6 +11,7 @@ import Search from "./pages/Search";
 import Heart from "./pages/Heart";
 import Shopping from "./pages/Shopping";
 import ProductPage from "./pages/product";
+import ForgotPassword from "./pages/ForgotPassword";
  
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
           <Route path="/heart" element={<Heart/>}/>
           <Route path="/shopping" element={<Shopping/>}/>
           <Route path="/product" element={<ProductPage/>}/>
+          <Route path="//forgot-password" element={<ForgotPassword/>}/>
+
         </Routes>
         {/* main */}
         {/* Footer */}
