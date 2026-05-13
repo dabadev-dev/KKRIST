@@ -30,3 +30,16 @@ export type PropsStory = {
   text: string;
   description: string;
 }
+
+export type PropsProduct = {
+  image: string;
+  title: string;
+  title2: string;
+  price: string;
+};
+
+export type PropsColor = {
+  color: string;
+  name: string;
+  count: number;
+}

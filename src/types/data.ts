@@ -1,4 +1,5 @@
-import type { MenuList, PropsBestseller, PropsCard, PropsCustomer, PropsStory } from "./type";
+
+import type { MenuList, PropsBestseller, PropsCard, PropsColor, PropsCustomer, PropsProduct, PropsStory } from "./type";
 
 export const menuLists: MenuList[] = [
   { name: "Home", url: "/" },
@@ -186,7 +187,150 @@ export const storyLists: PropsStory[] = [
   }
 ];
 
+export const productLists: PropsProduct[] = [
+  {
+    image:"images/image26.jpg",
+    title: "Roadstar",
+    title2: "Printed Cotton T-shirt",
+    price: "2500 FCFA"
+  },
+  {
+    image:"images/image13.jpg",  
+    title: "Allen Solly",
+    title2: "Wom Textured Handheld Bag",
+    price: "7500 FCFA"
+  },
+  {
+    image:"images/image27.jpg",  
+    title: "Louis Philippe",
+    title2: "Polo Collar T-shirt",
+    price: "3500 FCFA"
+  },
+  {
+    image:"images/image18.jpg",  
+    title: "Adidas",
+    title2: "Men adi-dash Running Shoes",
+    price: "10 000 FCFA"
+  },
+  {
+    image:"images/image20.jpg",  
+    title: "Trendyol",
+    title2: "Floral Embroidered Maxi Dress",
+    price: "7500 FCFA"
+  },
+  {
+    image:"images/image29.jpg",  
+    title: "YK Disney",
+    title2: "Girls White Moana Printed Dress",
+    price: "5000 FCFA"
+  },
+  {
+    image:"images/image11.jpg",  
+    title: "US Polo",
+    title2: "Polo Collar T-shirt",
+    price: "3000 FCFA"
+  },
+  {
+    image:"images/image19.jpg", 
+    title: "Zyla",
+    title2: "Women Sandals",
+    price: "10 000 FCFA"
+  },
+  {
+    image:"images/image28.jpg",
+    title: "Arrow",
+    title2: "Casual Blue jeans",
+    price: "4000 FCFA"
+  },
+  {
+    image:"images/image25.jpg",  
+    title: "Allen Solly",
+    title2: " Leather jacket",
+    price: "6000 FCFA"
+  },
+  {
+    image:"images/image17.jpg",  
+    title: "US Polo",
+    title2: "Casual Shoe for Women",
+    price: "10 000 FCFA"
+  },
+  {
+    image:"images/image23.jpg",  
+    title: "Gucci",
+    title2: "Leather Hand Purse",
+    price: "3 000 FCFA"
+  },
+  {
+    image:"images/image21.jpg",  
+    title: "Trendyol",
+    title2: "Floral Embroidered Maxi Dress",
+    price: "7500 FCFA"
+  },
+  {
+    image:"images/image14.jpg",  
+    title: "YK Disney",
+    title2: "Girls grey Moana Printed Dress",
+    price: "5000 FCFA"
+  },
+  {
+    image:"images/image33.jpg",  
+    title: "Flora",
+    title2: "Leather Hand Purse",
+    price: "6 000 FCFA"
+  }                  
+];
 
 
+export const categorie = [
+  "Men",
+  "Women",
+  "Kids",
+  "Bags",
+  "Belts",
+  "Wallets",
+  "Watches",
+  "Accessories",
+  "Winter Wear",
+];
 
+export const colorList: PropsColor[] = [
+  {
+    name: "Red",
+    count: 10,
+    color: "bg-red-500"
+  },
+  {
+    name: "Blue",
+    count: 14,
+    color: "bg-blue-500"
+  },
+  {
+    name: "Green",
+    count: 9,
+    color: "bg-green-500"
+  },
+  {
+    name: "Yellow",
+    count: 6,
+    color: "bg-yellow-500"
+  },
+  {
+    name: "Black",
+    count: 4,
+    color: "bg-black-500"
+  },
+  {
+    name: "orange",
+    count: 2,
+    color: "bg-orange-500"
+  },
+];
 
+export const sizeLists = [
+  { name: "S", count: 6 },
+  { name: "M", count: 20 },
+  { name: "L", count: 7 },
+  { name: "XL", count: 16 },
+  { name: "XXL", count: 10 },
+  { name: "XXXL", count: 2 },
+];

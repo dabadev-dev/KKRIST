@@ -16,7 +16,7 @@ export default function Section_1() {
         <div className=" w-full h-full ">
           <img
             className="absolute z-10 object-cover md:w-1/2 md:right-0 md:top-0"
-            src="images/image1.png"
+            src="images/image-1.png"
             alt="image1"
           />
         </div>

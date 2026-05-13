@@ -1,5 +1,6 @@
 import { FaStar } from 'react-icons/fa';
-import type {PropsCard, PropsBestseller, PropsCustomer, PropsStory} from '../types/type';  
+import type {PropsCard, PropsBestseller, PropsCustomer, PropsStory, PropsProduct} from '../types/type';  
+import { Link } from 'react-router-dom';
 
 
 export default function Card({ title, buttonText, image }: PropsCard) {
@@ -56,6 +57,23 @@ export function Story({ Image, icon, text, description }: PropsStory) {
         <div className='text-xl'>{icon}</div>
         <h3 className="text-xl font-bold">{text}</h3>
         <p className="text-gray-600 text-xl">{description}</p>
+      </div>
+    </div>
+  );
+}
+
+export function Product({ title, title2, price, image }: PropsProduct) {
+  return (
+    <div className=" flex flex-col bg-white overflow-hidden">
+      <Link to="/product/:id">
+        <div className="h-120 w-full bg-no-repeat bg-cover "
+          style={{ backgroundImage: `url(${image})` }}>
+        </div>
+      </Link>
+      <div className="flex flex-col p-4 space-y-2">
+        <p className="text-gray-600 font-black">{title}</p>
+        <p className="text-gray-600 font-semibold">{title2}</p>
+        <p className="text-xl font-semibold text-gray-600">{price}</p>
       </div>
     </div>
   );
