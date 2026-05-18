@@ -43,3 +43,10 @@ export type PropsColor = {
   name: string;
   count: number;
 }
+
+export type PropsItem = {
+  url: string;
+  icon: string;
+  name: string;
+
+}

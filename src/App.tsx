@@ -12,6 +12,9 @@ import ProductPage from "./pages/product";
 import ForgotPassword from "./pages/ForgotPassword";
 import HomeLayout from "./layout/homeLayout";
 import ProductDetail from "./pages/productDetail";
+import AuthLayout from "./layout/aut-layout";
+import DashboardLayout from "./layout/dashboard-layout";
+import MyProfil from "./pages/MyProfil";
  
 function App() {
   return (
@@ -32,8 +35,13 @@ function App() {
               <Route path="/product" element={<ProductPage/>}/>
               <Route path="/product/:id" element={<ProductDetail/>}/>
           </Route>
-              <Route path="/login" element={<Login/>}/>
-              <Route path="/forgot-password" element={<ForgotPassword/>}/>
+          <Route path="/auth" element={<AuthLayout/>}>
+              <Route path="login" element={<Login/>}/>
+              <Route path="forgot-password" element={<ForgotPassword/>}/>
+          </Route>
+          <Route path="dash" element={<DashboardLayout/>}>
+          <Route path="profil" element={<MyProfil/>}/>
+          </Route>
         </Routes>
         {/* main */}
         

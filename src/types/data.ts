@@ -1,5 +1,5 @@
 
-import type { MenuList, PropsBestseller, PropsCard, PropsColor, PropsCustomer, PropsProduct, PropsStory } from "./type";
+import type { MenuList, PropsBestseller, PropsCard, PropsColor, PropsCustomer, PropsItem, PropsProduct, PropsStory } from "./type";
 
 export const menuLists: MenuList[] = [
   { name: "Home", url: "/" },
@@ -334,3 +334,7 @@ export const sizeLists = [
   { name: "XXL", count: 10 },
   { name: "XXXL", count: 2 },
 ];
+
+export const dashboardMenuLists: PropsItem = [
+
+]
